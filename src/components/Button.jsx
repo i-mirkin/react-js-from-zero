@@ -1,6 +1,3 @@
-export default function Button({children}){
-    const handleClick = () => {
-        console.log('handleClick')
-    }
-    return <button onClick={handleClick}>{children}</button>
+export default function Button({children, onClick}){
+    return <button onClick={onClick}>{children}</button>
 }
